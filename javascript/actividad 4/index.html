@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/index.css">
+    <title>Mini Proyecto</title>
+</head>
+<body>
+
+    <h1 style="text-align:center;">trabajo con JavaScript</h1>
+    <div class="caja">
+        <input type="number" id="n1" class="form-control" placeholder="numero 1" /> <br>
+        <input type="number" id="n2" class="form-control" placeholder="numero 2" /> <br>
+        <select class="form-select" aria-label="Default select example" id="opc">
+        <option selected>opcion</option>
+        <option value="1">sumar</option>
+        <option value="2">restar</option>
+        <option value="3">multiplicar</option>
+        <option value="4">dividir</option>
+        <option value="5">potencia del primer numero</option>
+        </select>
+        <br>
+        <button onclick="mostrar()" class="btn btn-outside-dark">calculadora</button>
+        <!--mostrar el resultado-->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="respuesta">
+        <strong id="resultado"></strong>
+        <button type="button" class="btn-outside-close" data-bs-dismiss="alert" aria-label="close"</button>
+    </div>
+    </div>
+    <script src="./js/calculadora.js"></script>
+</body>
+</html>
