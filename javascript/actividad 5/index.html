@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/index.css">
+    <title>Mini Proyecto</title>
+</head>
+<body>
+
+<body>
+
+    <div class="titulo">
+        <h1>Don Mathew</h1>
+    </div>
+    
+    <!-- Formulario de entrada para recopilar información del pedido -->
+    <label for="cantidadPlatos">Cantidad de Platos:</label>
+    <input type="number" id="cantidadPlatos" name="cantidadPlatos" required><br>
+    
+    <label for="cantidadBebidas">Cantidad de Bebidas:</label>
+    <input type="number" id="cantidadBebidas" name="cantidadBebidas" required><br>
+    
+    <!-- Selección múltiple para el tipo de plato -->
+    <label for="tipoPlato">Tipo de Plato (selección múltiple):</label>
+    <select id="tipoPlato" name="tipoPlato" multiple>
+        <option value="Entrada">Entrada</option>
+        <option value="Plato Principal">Plato Principal</option>
+        <option value="Postre">Postre</option>
+    </select><br>
+    
+    <!-- Selección múltiple para el tipo de bebida -->
+    <label for="tipoBebida">Tipo de Bebida:</label>
+    <select id="tipoBebida" name="tipoBebida" multiple>
+        <option value="Limonada">Limonada</option>
+        <option value="Refresco">Refresco</option>
+        <option value="Agua">Agua</option>
+    </select><br>
+    
+    <!-- Checkbox para seleccionar el "Plato Ejecutivo" -->
+    <label for="platoEjecutivo">Plato Ejecutivo:</label>
+    <input type="checkbox" id="platoEjecutivo" name="platoEjecutivo"><br>
+    
+    <!-- Contenedor donde se mostrará la factura -->
+    <label for="pedido">Pedido (Factura):</label>
+    <div id="factura"></div><br>
+    
+    <!-- Botón para calcular el total -->
+    <input type="button" value="Calcular Total" onclick="calcularTotal()">
+    
+    <!-- Se incluye el archivo JavaScript para realizar el cálculo -->
+    <script src="./js/restaurante.js"></script>
+    
+    </body>
+    </html>
+    
