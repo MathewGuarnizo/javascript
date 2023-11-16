@@ -4,34 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <title>Mini Proyecto</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Contador de me gustas</h1>
-    <div class="container">
-        <div class="row">
-            <p></p>
-            <h2 style="text-align: center;"><span id ="valor"></span></h2>
-            <button type="button" id="incrementar" class="btn btn-outline-success col" onclick="incremento()">
-            sumar <i class="far fa-thumbs-up"></i>
-            </button>
 
-            <br>
+<body>
 
-            <button type="button" id="restar" class="btn btn-outline-danger col" onclick="decremento()">
-            restar <i class="far fa-thumbs-down"></i>
-        </button>
-        </div>
-
-        <br>
-
-        <button type="button" onclick="resetear()" id="resetear" class="btn btn-outline-success col">
-            <i class="fas fa-broom"></i>
-        </button>
+    <div class="titulo">
+        <h1>Don Mathew</h1>
     </div>
-
-    <script src="./js/likes.js"></script>
-</body>
-</html>
+    
+    <!-- Formulario de entrada para recopilar información del pedido -->
+    <label for="cantidadPlatos">Cantidad de Platos:</label>
+    <input type="number" id="cantidadPlatos" name="cantidadPlatos" required><br>
+    
+    <label for="cantidadBebidas">Cantidad de Bebidas:</label>
+    <input type="number" id="cantidadBebidas" name="cantidadBebidas" required><br>
+    
+    <!-- Selección múltiple para el tipo de plato -->
+    <label for="tipoPlato">Tipo de Plato (selección múltiple):</label>
+    <select id="tipoPlato" name="tipoPlato" multiple>
+        <option value="Entrada">Entrada</option>
+        <option value="Plato Principal">Plato Principal</option>
+        <option value="Postre">Postre</option>
+    </select><br>
+    
+    <!-- Selección múltiple para el tipo de bebida -->
+    <label for="tipoBebida">Tipo de Bebida:</label>
+    <select id="tipoBebida" name="tipoBebida" multiple>
+        <option value="Limonada">Limonada</option>
+        <option value="Refresco">Refresco</option>
+        <option value="Agua">Agua</option>
+    </select><br>
+    
+    <!-- Checkbox para seleccionar el "Plato Ejecutivo" -->
+    <label for="platoEjecutivo">Plato Ejecutivo:</label>
+    <input type="checkbox" id="platoEjecutivo" name="platoEjecutivo"><br>
+    
+    <!-- Contenedor donde se mostrará la factura -->
+    <label for="pedido">Pedido (Factura):</label>
+    <div id="factura"></div><br>
+    
+    <!-- Botón para calcular el total -->
+    <input type="button" value="Calcular Total" onclick="calcularTotal()">
+    
+    <!-- Se incluye el archivo JavaScript para realizar el cálculo -->
+    <script src="./js/restaurante.js"></script>
+    
+    </body>
+    </html>
+    

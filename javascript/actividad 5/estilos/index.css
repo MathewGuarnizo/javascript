@@ -1,26 +1,113 @@
-h1{
-    border-radius: 30px;
-    border: 4px solid red; 
-    animation: BGcolorchanging-5colors 5s linear infinite; /* Aplica la animación al borde */
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente de texto predeterminada */
+    margin: 0;
+    padding: 0;
+    background-color: #43434343; /* Color de fondo gris claro */
+    text-align: center; /* Centra el contenido en el cuerpo de la página */
+    border-radius: 30px; /* Agrega bordes redondeados */
+    border: 9px solid red; /* Establece un borde sólido de 9px de ancho en color rojo */
+    animation: BGcolorchanging-5colors 5s linear infinite; /* Aplica una animación de cambio de color al fondo */
 }
 
+/* Estilos para el elemento con clase "titulo" */
+.titulo {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    background-color: #003cff; /* Color de fondo gris oscuro */
+    width: 30%; /* Ancho del elemento */
+    margin: 0 auto; /* Centra el elemento horizontalmente en el contenedor principal */
+    max-width: 50%; /* Establece el ancho máximo del elemento */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    border-radius: 25px; /* Agrega bordes redondeados */
+    margin-top: 10px; /* Márgenes superiores de 10px */
+}
+
+/* Estilos para el encabezado h1 dentro del elemento "titulo" */
+h1 {
+    width: 1200px; /* Ancho del encabezado h1 */
+    color: #00ffff; /* Color del texto */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-top: 10px; /* Márgenes superiores */
+    margin-bottom: 12px; /* Márgenes inferiores */
+    font-weight: bold; /* Establece el peso de la fuente como negrita */
+    font-size: 30px; /* Tamaño de fuente */
+}
+
+/* Definición de la animación para cambiar el color de fondo */
 @keyframes BGcolorchanging-5colors {
-    0%{
+    0% {
         border-color: #f60101;
     }
-    20%{
+    20% {
         border-color: #f69001;
     }
-    40%{
+    40% {
         border-color: #eef601;
     }
-    60%{
+    60% {
         border-color: #22f601;
     }
-    80%{
+    80% {
         border-color: #3201f6;
     }
-    100%{
+    100% {
         border-color: #58008f;
     }
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 350px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background-color: #fff; /* Color de fondo blanco */
+    padding: 20px; /* Espacio interno de 20px */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para etiquetas (labels) */
+label {
+    display: block; /* Mostrar etiquetas en bloques separados */
+    margin-bottom: 10px; /* Márgenes inferiores de 10px */
+    margin-top: 5px; /* Márgenes superiores de 5px */
+}
+
+/* Estilos para campos de entrada (números, texto) y selección (select) */
+input[type="number"],
+input[type="text"],
+select {
+    width: 95%; /* Ancho del 95% para llenar el contenedor */
+    padding: 10px; /* Relleno interno de 10px */
+    margin-bottom: 20px; /* Márgenes inferiores de 20px */
+    border: 1px solid #ccc; /* Borde sólido de 1px en color gris claro */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+}
+
+/* Estilos para el botón */
+input[type="button"] {
+    background-color: #007BFF; /* Color de fondo azul */
+    color: #ffffff; /* Color del texto blanco */
+    padding: 10px 20px; /* Relleno interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilos para el botón al pasar el cursor por encima (hover) */
+input[type="button"]:hover {
+    background-color: #0056b3; /* Color de fondo azul más oscuro */
+}
+
+/* Estilos para el resultado (inicialmente oculto) */
+#resultado {
+    display: none; /* Inicialmente oculto */
+    background-color: #D4EDDA; /* Color de fondo verde claro */
+    padding: 10px; /* Espacio interno de 10px */
+    margin-top: 20px; /* Márgenes superiores de 20px */
+    border: 1px solid #c3e6cb; /* Borde sólido de 1px en color verde */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    color: #155724; /* Color de texto verde oscuro */
+    font-weight: bold; /* Peso de la fuente en negrita */
 }
