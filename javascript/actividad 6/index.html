@@ -9,29 +9,31 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
+    <!-- Título del contador -->
     <h1 style="text-align: center;">Contador de me gustas</h1>
+    <!-- Contenedor principal -->
     <div class="container">
         <div class="row">
             <p></p>
+            <!-- Sección para mostrar el contador -->
             <h2 style="text-align: center;"><span id ="valor"></span></h2>
+            <!-- Botón para incrementar el contador -->
             <button type="button" id="incrementar" class="btn btn-outline-success col" onclick="incremento()">
-            sumar <i class="far fa-thumbs-up"></i>
+                sumar <i class="far fa-thumbs-up"></i>
             </button>
-
             <br>
-
+            <!-- Botón para restar el contador -->
             <button type="button" id="restar" class="btn btn-outline-danger col" onclick="decremento()">
-            restar <i class="far fa-thumbs-down"></i>
-        </button>
+                restar <i class="far fa-thumbs-down"></i>
+            </button>
         </div>
-
         <br>
-
+        <!-- Botón para resetear el contador -->
         <button type="button" onclick="resetear()" id="resetear" class="btn btn-outline-success col">
             <i class="fas fa-broom"></i>
         </button>
     </div>
-
+    <!-- Se incluye el archivo de JavaScript que maneja la lógica del contador -->
     <script src="./js/likes.js"></script>
 </body>
 </html>
