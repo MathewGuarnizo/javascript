@@ -11,7 +11,6 @@
 <body>
 <!-- Encabezado y título -->
 <h1>Calculadora de libros con contador y precio fijo</h1>
-
 <!-- Imagen relacionada -->
 <img class="imagen" src="./imagenes/sangre.jpg" alt="sangre">
 <!-- Formulario -->
@@ -27,16 +26,16 @@
             <button type="button" id="resetear" class="btn btn-outline-warning col" onclick="resetear()"><i class="fas fa-broom"></i></button>
         </div>
     <br><br>
-    <!-- Etiqueta para el precio por libro -->
-    <label for="precioLibro">Precio por libro:</label>
-    <!-- Campo de entrada para el precio (valor fijo, deshabilitado para edición) -->
-    <input type="number" id="precioLibro" min="0.00" step="0.01" value="15000" disabled>
-    <!-- Texto que muestra el precio fijo por libro -->
-    <p>Precio fijo por libro: $15000</p>
-    <br><br>
-    <!-- Botón para calcular el total a pagar -->
-    <button onclick="calcularTotal()">Calcular</button>
-</div>
+        <!-- Etiqueta para el precio por libro -->
+        <label for="precioLibro">Precio por libro:</label>
+            <!-- Campo de entrada para el precio (valor fijo, deshabilitado para edición) -->
+            <input type="number" id="precioLibro" min="0.00" step="0.01" value="15000" disabled>
+        <!-- Texto que muestra el precio fijo por libro -->
+        <p>Precio fijo por libro: $15000</p>
+        <br><br>
+        <!-- Botón para calcular el total a pagar -->
+        <button onclick="calcularTotal()">Calcular</button>
+    </div>
 <!-- Resultado del cálculo -->
 <div class="resultado">
     <!-- Encabezado para mostrar el total a pagar -->
@@ -44,7 +43,7 @@
     <!-- Espacio para mostrar el total calculado -->
     <p id="totalPagar">$</p>
 </div>
-<!-- Referencia al archivo JavaScript que contiene la lógica -->
-<script src="./js/libros.js"></script>
+    <!-- Referencia al archivo JavaScript que contiene la lógica -->
+    <script src="./js/libros.js"></script>
 </body>
 </html>
