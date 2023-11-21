@@ -3,19 +3,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("/imagenes/wallpaper.jpg"); /* Fondo de la página */
-    background-size: cover;
-    background-position: center;
 }
 
-/* Encabezado h1 */
+/* Estilos para el encabezado */
 h1 {
-    border-radius: 30px;
+    border-radius: 50px;
     text-align: center;
-    border: 7px solid red; /* Borde rojo */
+    border: 8px solid red; /* Borde rojo */
     animation: BGcolorchanging-5colors 5s linear infinite; /* Animación de cambio de color */
     padding: 20px;
-    color: white;
+    color: rgb(71, 71, 71);
     text-shadow: 2px 2px 4px #000000; /* Sombra del texto */
 }
 
@@ -80,15 +77,26 @@ h1 {
 }
 
 /* Estilo para la imagen */
-.imagen {
+.antes {
     position: absolute;
-    width: 320px;
-    top: 380px; /* Posición superior */
-    right: 400px; /* Posición derecha */
+    width: 400px;
+    top: 500px; /* Posición superior */
+    right: 150px; /* Posición derecha */
     transform: translateY(-50%);
     z-index: 9999;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* Sombra */
+}
+
+.sangre {
+    position: absolute;
+    width: 400px;
+    top: 500px; /* Posición superior */
+    right: 600px; /* Posición derecha */
+    transform: translateY(-50%);
+    z-index: 9999;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* Sombra */
 }
 
 /* Estilo para el número del contador */
