@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/estilos/index.css">
+    <title>Selección de Productos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu</h1>
+
+        <div class="menu-seccion">
+            <h2>Productos</h2>
+
+            <div class="producto">
+                <div class="producto-contenido">
+                    <label>
+                        <input type="checkbox" class="papeleria-checkbox" value="cartulina">
+                        Cartulina
+                    </label>
+                    <img src="imagenes/cartulina.png" alt="Cartulina" id="cartulina">
+                    <input type="number" id="cartulina-cantidad" value="1" min="1" class="input-quantity">
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto-contenido">
+                    <label>
+                        <input type="checkbox" class="papeleria-checkbox" value="papel">
+                        Papel
+                    </label>
+                    <img src="imagenes/papel.png" alt="Papel" id="papel">
+                    <input type="number" id="papel-cantidad" value="1" min="1" class="input-quantity">
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto-contenido">
+                    <label>
+                        <input type="checkbox" class="papeleria-checkbox" value="lapicero">
+                        Lapicero
+                    </label>
+                    <img src="imagenes/lapicero.png" alt="Lapicero" id="lapicero">
+                    <input type="number" id="lapicero-cantidad" value="1" min="1" class="input-quantity">
+                </div>
+            </div>
+        </div>
+
+        <button class="calcular-boton" onclick="calcularTotal()">Calcular Total</button>
+
+        <div class="menu-seccion">
+            <h2>Pedido</h2>
+            <table id="pedido" class="orden-tabla" style="display: none;">
+                <tr>
+                    <th>Cantidad</th>
+                    <th>Nombre</th>
+                    <th>Precio Unitario</th>
+                    <th>Precio Total</th>
+                </tr>
+            </table>
+        </div>
+
+        <p class="total-precio">Total: <span id="total">0</span> COP</p>
+    </div>
+
+    <script src="/js/papeleria.js"></script>
+</body>
+</html>
