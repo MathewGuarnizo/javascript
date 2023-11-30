@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <title>libros</title>
+</head>
+<body>
+    <!--Imagenes-->
+    <div class="imagenes">
+        <img class="sangre" src="./imagenes/sangre.jpg" alt="Sangre-de-un-Campeon">
+        <img class="antes" src="./imagenes/antes.jpg" alt="Antes-de-Diciembre">
+    </div>
+<!-- Encabezado y título -->
+<h1>Calculadora de libros</h1>
+<!-- Formulario -->
+<div class="form-container">
+    <!-- Etiqueta para la cantidad de libros del primer tipo -->
+    <label for="cantidadLibros1">Cantidad de Sangre de un Campeon:</label>
+    <h2 class="number" style="text-align: left;"><span id="valor1">0</span></h2>
+    <div class="contador">
+        <button type="button" class="btn btn-outline-success col" onclick="incremento('valor1')"><i class="fa fa-solid fa-plus"></i></button>
+        <button type="button" class="btn btn-outline-danger col" onclick="decremento('valor1')"><i class="fa fa-solid fa-minus"></i></button>
+        <button type="button" class="btn btn-outline-warning col" onclick="resetear('valor1')"><i class="fas fa-broom"></i></button>
+        <button onclick="seleccionarLibro(1)">Seleccionar Libro 1</button>
+    </div>
+    <br><br>
+    <!-- Etiqueta para el precio por libro del primer tipo -->
+    <p>Precio fijo por libro Sangre de un Campeon: $20000</p> <br>
+    <p>Total para solo para el libro Sangre de un Campeon:</p><p id="totalPagarTipo1">$</p>
+    <br><br>
+    <!-- Etiqueta para la cantidad de libros del segundo tipo -->
+    <label for="cantidadLibros2">Cantidad de libros Antes de Diciembre:</label>
+    <h2 class="number" style="text-align: left;"><span id="valor2">0</span></h2>
+    <div class="contador">
+        <button type="button" class="btn btn-outline-success col" onclick="incremento('valor2')"><i class="fa fa-solid fa-plus"></i></button>
+        <button type="button" class="btn btn-outline-danger col" onclick="decremento('valor2')"><i class="fa fa-solid fa-minus"></i></button>
+        <button type="button" class="btn btn-outline-warning col" onclick="resetear('valor2')"><i class="fas fa-broom"></i></button>
+        <button onclick="seleccionarLibro(2)">Seleccionar Libro 2</button>
+    </div>
+    <br><br>
+    <!-- Etiqueta para el precio por libro del segundo tipo -->
+    <p>Precio fijo por libro Antes de Diciembre: $25000</p> <br>
+    <p>Total para solo el libro Antes de Diciembre:</p><p id="totalPagarTipo2">$</p>
+    <br><br>
+    <!-- Botón para calcular el total a pagar -->
+    <button onclick="calcularTotal()">Calcular</button>
+</div>
+<!-- Resultado del cálculo -->
+<div class="resultado">
+    <!-- Encabezado para mostrar el total a pagar -->
+    <h2>Total a pagar:</h2>
+    <!-- Espacio para mostrar el total calculado -->
+    <p id="totalPagar">$</p>
+</div>
+<!-- Referencia al archivo JavaScript que contiene la lógica -->
+<script src="./js/libros.js"></script>
+</body>
+</html>

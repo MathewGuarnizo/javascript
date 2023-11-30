@@ -1,0 +1,105 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+h1 {
+    border-radius: 50px;
+    text-align: center;
+    border: 8px solid red; /* Borde rojo */
+    animation: BGcolorchanging-5colors 5s linear infinite; /* Animación de cambio de color */
+    padding: 20px;
+    color: rgb(71, 71, 71);
+    text-shadow: 2px 2px 4px #000000; /* Sombra del texto */
+}
+
+/* Animación para el encabezado */
+@keyframes BGcolorchanging-5colors {
+    0% {
+        border-color: #f60101;
+    }
+    20% {
+        border-color: #f69001;
+    }
+    40% {
+        border-color: #eef601;
+    }
+    60% {
+        border-color: #22f601;
+    }
+    80% {
+        border-color: #3201f6;
+    }
+    100% {
+        border-color: #58008f;
+    }
+}
+
+/* Contenedor principal */
+.form-container {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 10px;
+    background-color: rgba(233, 233, 233, 0.8); /* Fondo del contenedor principal */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    margin-left: 200px; /* Posición del margen izquierdo */
+}
+
+/* Estilos para los botones */
+.contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contador button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+/* Estilo para el resultado */
+.resultado {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(233, 233, 233, 0.8); /* Fondo del contenedor de resultados */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    margin-top: 20px;
+    max-width: 600px; 
+    margin-left: 200px; /* Posición del margen izquierdo */
+    margin-right: auto;
+}
+
+/* Estilo para la imagen */
+.antes {
+    position: absolute;
+    width: 200px;
+    top: 500px; /* Posición superior */
+    right: 100px; /* Posición derecha */
+    transform: translateY(-50%);
+    z-index: 9999;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* Sombra */
+}
+
+.sangre {
+    position: absolute;
+    width: 200px;
+    top: 500px; /* Posición superior */
+    right: 250px; /* Posición derecha */
+    transform: translateY(-50%);
+    z-index: 9999;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* Sombra */
+}
+
+/* Estilo para el número del contador */
+.number {
+    margin-left: 255px; /* Ajuste de posición */
+}
