@@ -1,0 +1,136 @@
+/* Estilo para ocultar el elemento con id "pedido" */
+#pedido {
+    display: none;
+}
+
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;  /* Fuente de texto */
+    background-color: #1b253f;  /* Color de fondo */
+    margin: 0;  /* Elimina el margen predeterminado */
+    padding: 0;  /* Elimina el relleno predeterminado */
+}
+
+/* Estilo para el contenedor principal de la página */
+.container {
+    max-width: 600px;  /* Ancho máximo del contenedor */
+    margin: 10px auto 0;  /* Centra el contenedor en la página con margen superior */
+    background-color: #ffffff;  /* Color de fondo del contenedor */
+    padding: 20px;  /* Relleno interno del contenedor */
+    border: 1px solid #e6e6e6;  /* Borde del contenedor */
+    border-radius: 10px;  /* Bordes redondeados */
+}
+
+/* Estilo para el encabezado principal */
+h1 {
+    text-align: center;  /* Centra el texto */
+    color: #333;  /* Color del texto */
+    font-size: 24px;  /* Tamaño de fuente */
+    margin-bottom: 20px;  /* Margen inferior */
+}
+
+/* Estilo para la sección del menú */
+.menu-seccion {
+    margin-bottom: 20px;  /* Margen inferior */
+}
+
+/* Estilo para cada producto */
+.producto {
+    border: 1px solid #ccc; /* Borde para cada producto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 25px; /* Espaciado interno */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo para el contenido de cada producto */
+.producto-contenido {
+    display: flex; /* Para alinear los elementos horizontalmente */
+    align-items: left; /* Centra los elementos verticalmente */
+    position: relative;
+}
+
+/* Estilo para el contenedor de cantidad */
+.cantidad-container {
+    margin-top: 10px; /* Espaciado superior para separar la cantidad */
+    display: flex; /* Alineación horizontal */
+    align-items: left; /* Centra verticalmente los elementos */
+}
+
+/* Estilo para los elementos de selección y cantidad */
+.input-quantity {
+    width: calc(10% - 22px); /* Ancho ajustado con el tamaño del borde */
+    padding: 10px;
+    border: 1px solid #58698d; /* Color de borde de entrada */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #333; /* Color de texto */
+    background-color: #fff; /* Color de fondo del input */
+}
+
+/* Estilo para el botón de cálculo */
+.calcular-boton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #58698d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Cambio de estilo al pasar el mouse sobre el botón */
+.calcular-boton:hover {
+    background-color: #2c4153;
+}
+
+/* Estilo para la tabla de pedidos */
+.orden-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #58698d; /* Borde para la tabla */
+}
+
+/* Estilo para las celdas del encabezado de la tabla */
+.orden-tabla th {
+    background-color: #2c4153; /* Color de fondo del encabezado de la tabla */
+    color: #fff; /* Color de texto del encabezado de la tabla */
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Estilo para las celdas de datos de la tabla */
+.orden-tabla td {
+    border: 1px solid #58698d; /* Borde para las celdas de la tabla */
+    padding: 10px;
+}
+
+/* Estilo para el total del monto */
+.total-precio {
+    text-align: right;  /* Alinea el texto a la derecha */
+    font-size: 20px;  /* Tamaño de fuente */
+    font-weight: bold;
+    margin-top: 20px;  /* Margen superior */
+    color: #333;  /* Color del texto */
+}
+
+#cartulina{
+    height: 100px;
+    position: absolute; /* Establece el posicionamiento absoluto */
+    left: 500px;
+}
+#lapicero{
+    height: 100px;
+    position: absolute; /* Establece el posicionamiento absoluto */
+    top: 360px; /* Ejemplo de posición desde la parte superior */
+    left: 500px;
+}
+#papel{
+    height: 100px;
+    position: absolute; /* Establece el posicionamiento absoluto */
+    top: 260px; /* Ejemplo de posición desde la parte superior */
+    left: 500px;
+}
