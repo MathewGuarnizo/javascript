@@ -12,6 +12,7 @@ function calcularTotal() {
 
     let total = 0;
 
+    // Inicializar la tabla de pedido en el HTML
     pedido.innerHTML = `
         <tr>
             <th>Cantidad</th>
@@ -21,10 +22,12 @@ function calcularTotal() {
         </tr>
     `;
 
+    // Función para agregar un elemento al pedido y actualizar el total
     function agregarAlPedido(item, precio, cantidad) {
-        const row = document.createElement('tr');
+        const row = document.createElement("tr");
         const precioTotal = cantidad * precio;
 
+        // Agregar la información del producto al pedido
         row.innerHTML = `
             <td>${cantidad}</td>
             <td>${item}</td>

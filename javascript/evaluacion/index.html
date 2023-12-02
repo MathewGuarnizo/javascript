@@ -1,68 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/estilos/index.css">
-    <title>Selección de Productos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>PAPELERIA</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Menu</h1>
+    <div>
 
-        <div class="menu-seccion">
-            <h2>Productos</h2>
+        
+        <h1>LA IMPRENTA DIVINA</h1>
+            <div class="caja"> <!--Contenedor para el formulario-->
+                <select class="selector" id="menu">
+                    <option selected>Material de Escritura</option>
+                    <option value="1">Bolígrafos</option>
+                    <option value="2">Lápices</option>
+                    <option value="3">Marcadores</option>
+                    <option value="4">Portaminas</option>
+                    <option value="5">Correctores</option>
+                </select>
+                <input type="number" id="cantidad" class="cantInput" placeholder="Cantidad"> <br>
 
-            <div class="producto">
-                <div class="producto-contenido">
-                    <label>
-                        <input type="checkbox" class="papeleria-checkbox" value="cartulina">
-                        Cartulina
-                    </label>
-                    <img src="imagenes/cartulina.png" alt="Cartulina" id="cartulina">
-                    <input type="number" id="cartulina-cantidad" value="1" min="1" class="input-quantity">
-                </div>
+
+                <select class="selector" id="menu2">
+                    <option selected>Cuadernos y Papel</option>
+                    <option value="1">Cuadernos</option>
+                    <option value="2">Blocs de notas</option>
+                    <option value="3">Papel para impresora</option>
+                    <option value="4">Papel de carta</option>
+                    <option value="5">Sobres</option>
+                </select>
+                <input type="number" id="cantidad2" class="cantInput" placeholder="Cantidad"> <br>
+
+
+                <select class="selector" id="menu3">
+                    <option selected>Artículos de Escritorio</option>
+                    <option value="1">Organizadores de escritorio</option>
+                    <option value="2">Clips y sujetapapeles</option>
+                    <option value="3">Bandejas para documentos</option>
+                    <option value="4">Dispensadores de cinta</option>
+                    <option value="5">Tijeras y cortadores</option>
+                </select>
+                <input type="number" id="cantidad3" class="cantInput" placeholder="Cantidad"> <br>
+
+
+                <select class="selector" id="menu4">
+                    <option selected>Material de Arte</option>
+                    <option value="1">Lápices de colores</option>
+                    <option value="2">Pinceles</option>
+                    <option value="3">Acuarelas</option>
+                    <option value="4">Óleos y acrílicos</option>
+                    <option value="5">Papel para arte</option>
+                </select>
+                <input type="number" id="cantidad4" class="cantInput" placeholder="Cantidad"> <br>
+
+        
+                <select class="selector" id="menu5">
+                    <option selected>Electrónica de Oficina</option>
+                    <option value="1">USBs y discos externos</option>
+                    <option value="2">Cables y cargadores</option>
+                    <option value="3">Pilas y baterías</option>
+                </select>
+                <input type="number" id="cantidad5" class="cantInput" placeholder="Cantidad"> <br>
+
+
+        
+                <button onclick="mostrar()" id="botonR">Calcular</button>
             </div>
 
-            <div class="producto">
-                <div class="producto-contenido">
-                    <label>
-                        <input type="checkbox" class="papeleria-checkbox" value="papel">
-                        Papel
-                    </label>
-                    <img src="imagenes/papel.png" alt="Papel" id="papel">
-                    <input type="number" id="papel-cantidad" value="1" min="1" class="input-quantity">
-                </div>
+            <div class="menuSeccion">
+                <table id="pedido" class="ordenTabla" style="display: none;">
+                    <tr>
+                        <th>Cantidad</th>
+                        <th>Nombre</th>
+                        <th>Precio Unitario</th>
+                        <th>Precio Total</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="respuesta"> <!-- Contenedor para la sección del pedido-->
+                <strong id="resultado"></strong> <!-- tabla oculta con un identificador unico para mostrar el resumen del pedido.-->
             </div>
 
-            <div class="producto">
-                <div class="producto-contenido">
-                    <label>
-                        <input type="checkbox" class="papeleria-checkbox" value="lapicero">
-                        Lapicero
-                    </label>
-                    <img src="imagenes/lapicero.png" alt="Lapicero" id="lapicero">
-                    <input type="number" id="lapicero-cantidad" value="1" min="1" class="input-quantity">
-                </div>
-            </div>
-        </div>
-
-        <button class="calcular-boton" onclick="calcularTotal()">Calcular Total</button>
-
-        <div class="menu-seccion">
-            <h2>Pedido</h2>
-            <table id="pedido" class="orden-tabla" style="display: none;">
-                <tr>
-                    <th>Cantidad</th>
-                    <th>Nombre</th>
-                    <th>Precio Unitario</th>
-                    <th>Precio Total</th>
-                </tr>
-            </table>
-        </div>
-
-        <p class="total-precio">Total: <span id="total">0</span> COP</p>
-    </div>
-
-    <script src="/js/papeleria.js"></script>
+    <!-- enlace con JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
