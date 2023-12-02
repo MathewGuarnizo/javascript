@@ -79,9 +79,9 @@ h1 {
 /* Estilo para la imagen */
 .antes {
     position: absolute;
-    width: 400px;
+    width: 200px;
     top: 500px; /* Posición superior */
-    right: 150px; /* Posición derecha */
+    right: 100px; /* Posición derecha */
     transform: translateY(-50%);
     z-index: 9999;
     border-radius: 10px;
@@ -90,9 +90,9 @@ h1 {
 
 .sangre {
     position: absolute;
-    width: 400px;
+    width: 200px;
     top: 500px; /* Posición superior */
-    right: 600px; /* Posición derecha */
+    right: 250px; /* Posición derecha */
     transform: translateY(-50%);
     z-index: 9999;
     border-radius: 10px;

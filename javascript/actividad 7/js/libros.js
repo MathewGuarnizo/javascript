@@ -48,6 +48,7 @@ function calcularTotal() {
     var totalPagarTipo1 = cantidadLibrosTipo1 * precioPorLibroTipo1;
     var totalPagarTipo2 = cantidadLibrosTipo2 * precioPorLibroTipo2;
 
+    // Actualizar suma de libros en el HTML
     document.getElementById('totalPagar1').textContent = '$' + totalPagarTipo1.toFixed(2);
     document.getElementById('totalPagar2').textContent = '$' + totalPagarTipo2.toFixed(2);
 
