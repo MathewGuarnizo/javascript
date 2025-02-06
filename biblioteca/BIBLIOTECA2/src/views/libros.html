@@ -1,0 +1,62 @@
+<!-- views/libros.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros Disponibles</title>
+    <link rel="stylesheet" href="/src/public/css/styles.css">
+</head>
+<body>
+    <!-- Por ejemplo, en la plantilla EJS para la página de inicio -->
+    <%- include('index.html', { content: '<h1>Bienvenido a nuestro sitio</h1><p>Contenido de la página de inicio...</p>' }) %>
+
+    <div class="container" id="librosContainer">
+        <h1>Libros Disponibles</h1>
+    </div>
+    
+    <script>
+        // Datos de ejemplo para libros y usuario
+        const libros = [
+            { id: 1, titulo: "Libro 1", resumen: "Resumen del Libro 1" },
+            { id: 2, titulo: "Libro 2", resumen: "Resumen del Libro 2" },
+            { id: 3, titulo: "Libro 3", resumen: "Resumen del Libro 3" }
+        ];
+        const user = true; // Usuario autenticado (true) o no autenticado (false)
+    
+        // Función para reservar un libro
+        function reservarLibro(libroId) {
+            console.log('Reservando libro con ID:', libroId);
+        }
+    
+        // Obtener referencia al contenedor de libros
+        const librosContainer = document.getElementById('librosContainer');
+    
+        // Iterar sobre los libros y generar el HTML dinámicamente
+        libros.forEach(libro => {
+            const libroDiv = document.createElement('div');
+            libroDiv.classList.add('libro');
+    
+            const tituloH2 = document.createElement('h2');
+            tituloH2.textContent = libro.titulo;
+    
+            const resumenP = document.createElement('p');
+            resumenP.textContent = libro.resumen;
+    
+            libroDiv.appendChild(tituloH2);
+            libroDiv.appendChild(resumenP);
+    
+            // Agregar botón de reserva si el usuario está autenticado
+            if (user) {
+                const reservarBtn = document.createElement('button');
+                reservarBtn.textContent = 'Reservar';
+                reservarBtn.addEventListener('click', () => reservarLibro(libro.id)); // Llama a la función reservarLibro con el ID del libro
+                libroDiv.appendChild(reservarBtn);
+            }
+    
+            librosContainer.appendChild(libroDiv);
+        });
+    </script>
+    
+</body>
+</html>
